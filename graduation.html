@@ -872,22 +872,6 @@
     .closing-copy { max-width: 820px; margin: 0 auto; color: rgba(255,255,255,.84); font-size: 15px; line-height: 2; }
     .closing-copy p { margin: 0 0 18px; }
     .closing-copy strong { color: #ffda91; }
-    .boundary-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 18px;
-      margin: 32px auto;
-      max-width: 820px;
-    }
-    .boundary {
-      padding: 20px;
-      border: 1px solid rgba(255,255,255,.18);
-      border-radius: 16px;
-      background: rgba(255,255,255,.06);
-    }
-    .boundary h3 { display: flex; align-items: center; gap: 9px; margin: 0 0 11px; color: #fff; font-size: 13px; }
-    .boundary h3 i { display: grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; background: var(--gold); color: var(--blue-deep); font-size: 11px; font-style: normal; }
-    .boundary p { margin: 0; color: rgba(255,255,255,.72); font-size: 11px; line-height: 1.9; }
     .last-line {
       max-width: 850px;
       margin: 36px auto 0;
@@ -1042,7 +1026,6 @@
       .quality-panel { padding: 19px 15px; border-radius: 18px; }
       .quality-row { grid-template-columns: 82px minmax(50px,1fr) 60px; gap: 8px; font-size: 10px; }
       .quality-conclusion { padding: 16px; font-size: 12px; }
-      .boundary-grid { grid-template-columns: 1fr; gap: 11px; }
       .closing-copy { font-size: 13px; }
       .method { padding: 42px 20px 48px; }
       .method-grid { grid-template-columns: 1fr; gap: 15px; }
@@ -1302,7 +1285,6 @@
     .factor-experience i,.factor-policy i { background:#d98a6b; color:#fff8e8; }
     .factor-bond i,.factor-family i { background:#d5e1d7; }
     @keyframes chip-float { 50% { margin-top:-5px; } }
-    .boundary-grid { max-width:920px; }.boundary { background:rgba(255,250,230,.7); border-color:rgba(45,78,96,.18); }
     .boundary h3 { color:var(--blue-deep); }.boundary h3 i { background:var(--gold); color:var(--blue-deep); }.boundary p { color:#596d73; }
     .last-line { border-color:rgba(35,75,100,.22); color:var(--blue-deep); font-family:"Noto Serif SC","Songti SC",serif; }.last-line em { color:var(--coral); }
     .sources { background:#fff9e4; border-top:1px solid rgba(45,78,96,.16); }.sources-inner { color:#526972; }.sources h2 { color:var(--blue-deep); font-family:"Noto Serif SC","Songti SC",serif; }.sources-kicker { color:var(--coral); }.source-list a { color:var(--blue); }
@@ -1341,7 +1323,7 @@
       .factor-bond { grid-column:1!important; }.factor-density { grid-column:2!important; }.factor-comfort { grid-column:1!important; }.factor-policy { grid-column:2!important; }
       .factor-values { grid-column:1!important; }.factor-family { grid-column:2!important; }.factor-more { grid-column:1 / -1!important; justify-self:center; width:min(70%,230px); }
       .pressure-orbit { display:none; }
-      .boundary-grid { grid-template-columns:1fr; }.last-line { font-size:21px; }
+      .last-line { font-size:21px; }
       .footer { flex-direction:column; gap:5px; }
     }
     @media(prefers-reduced-motion:reduce) {
@@ -1470,11 +1452,7 @@
     #home .insight-strip { display:block; margin:20px 0 0; padding:0; border:0; border-radius:0; background:transparent; }
     #home .insight-strip p { max-width:900px; margin:0; color:#405867; font-size:12px; line-height:1.9; }
     #home .insight-strip strong { color:#173b61; }
-    .boundary-grid { grid-template-columns:1fr 1fr; gap:38px; max-width:1040px; margin:28px auto; }
-    .boundary-copy { margin:0; color:#465d68; font-size:13px; line-height:1.9; }
-    .boundary-copy strong { color:#173b61; font-size:inherit; }
     @media(max-width:560px) {
-      .boundary-grid { grid-template-columns:1fr; gap:14px; margin:22px auto; }
     }
   </style>
 
@@ -1512,12 +1490,12 @@
           <a class="button-primary" href="#cohort-scale">打开就业地图 <span class="arrow" aria-hidden="true">↓</span></a>
         </div>
         <figure class="hero-scale-teaser">
-          <img src="assets/graduation-crowd.jpg" alt="校园招聘现场，人群正在寻找工作机会">
+          <img src="./assets/graduation-crowd.jpg" alt="校园招聘现场，人群正在寻找工作机会">
         </figure>
       </div>
       <div class="hero-art" aria-label="两位毕业生站在思考气泡下，面对毕业去向的选择">
         <div class="hero-photo-wrap">
-          <img src="assets/graduates-editorial.webp" alt="两位穿着职业装、手持简历的毕业生站在校园走廊中，头顶的思考框写着：毕业之后，我该去哪儿呢？">
+          <img src="./assets/graduates-editorial.webp" alt="两位穿着职业装、手持简历的毕业生站在校园走廊中，头顶的思考框写着：毕业之后，我该去哪儿呢？">
         </div>
         <span class="art-spark spark-a" aria-hidden="true">✦</span>
         <span class="art-spark spark-b" aria-hidden="true">✳</span>
@@ -1600,7 +1578,7 @@
         <div class="hook-figure">
           <div class="chart-topline">
             <div>
-              <h3 class="chart-title">以2025年为例，家庭所在地，和最终就业地有多强的对应？</h3>
+              <h3 class="chart-title">以2025年为例，家庭所在地，和最终就业地（以省会/直辖市为例）有多强的对应？</h3>
               <p class="chart-subtitle">按家庭所在地类型分组</p>
             </div>
             
@@ -1677,7 +1655,7 @@
         </aside>
       </div>
       <div class="insight-strip reveal">
-        <p><strong>四类非省会组</strong>的省会就业比例相近，说明进入省会的门槛对这些组来说可能是相似的。省会家庭组的高比例，可能与家庭网络、信息优势或住房支持等因素有关；这张交叉表无法验证具体原因。</p>
+        <p><strong>四类非省会组</strong>的省会就业比例相近，说明进入省会的门槛对这些组来说可能是相似的。省会家庭组的高比例，可能与家庭网络、信息优势或住房支持等因素有关。</p>
       </div>
     </section>
 
@@ -1746,8 +1724,7 @@
         </div>
         <div class="closing-copy reveal">
           <p>三次调查记录了一个变化：就业地不再集中在省会，县级城市及以下的份额在扩大。但“去哪里”的分布变宽，不等于“去了之后怎样”的体验变好，因为起薪和满意度的变化节奏并不一致。</p>
-          <p>这张地图能告诉读者就业地的分布和差异，但不能告诉读者为什么做出那个选择，因为选择的背后有社会、政策、情感等多方面的复杂作用。</p>
-          <p>工作地版图变宽之后，下一道题是：岗位回报、工作体验和发展机会，能不能一起跟上。</p>
+          <p>这张地图能说明就业地的分布和差异，但不能说明为什么做出那个选择，因为选择的背后有社会、政策、情感等多方面的复杂作用。</p>
         </div>
         <div class="pressure-scene reveal" aria-label="岗位回报、生活成本、工作体验、人际关系、情感羁绊、就业机会密度、城市舒适性、人才政策、就业价值观、家庭资本等多种因素围绕毕业生就业选择">
           <div class="pressure-orbit orbit-one" aria-hidden="true"></div>
@@ -1770,13 +1747,9 @@
           <div class="factor-chip factor-family"><i aria-hidden="true">⌂</i><b>家庭资本</b></div>
           <div class="factor-chip factor-more"><i aria-hidden="true">＋</i><b>……</b></div>
           <figure class="pressure-portrait">
-            <div class="portrait-frame"><img src="assets/graduates-editorial.webp" alt="两位手持简历、神情犹豫的毕业生插画"></div>
+            <div class="portrait-frame"><img src="./assets/graduates-editorial.webp" alt="两位手持简历、神情犹豫的毕业生插画"></div>
             <figcaption>“毕业之后，我该去哪儿呢？”</figcaption>
           </figure>
-        </div>
-        <div class="boundary-grid reveal">
-          <p class="boundary-copy"><strong>这份数据可以呈现：</strong>调查对象的就业地类型与区域分布；不同家庭或学校区域组之间的比例差异；表中不同就业地对应的月起薪和满意度。</p>
-          <p class="boundary-copy"><strong>这份数据不能单独说明：</strong>个人选择某地的动机，以及家庭、学校或城市层级的因果作用；岗位回报、生活成本、工作体验、人际关系、情感羁绊、就业机会密度、城市舒适性、人才政策、就业价值观、家庭资本等因素如何影响个人选择。</p>
         </div>
         <p class="last-line reveal">工作地版图正在变宽。<br>下一道题是：<em>工作的回报与体验，能否一起跟上？</em></p>
       </div>
@@ -2009,3 +1982,4 @@
   </script>
 </body>
 </html>
+
